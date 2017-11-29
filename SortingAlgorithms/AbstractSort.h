@@ -21,6 +21,9 @@ public:
     inline vector<int> getStorage() const { return storage; };
 
 protected:
+    void swap(int& item1, int& item2);
+
+protected:
     void assertSorted(bool expectAscending = true);
 
 private:

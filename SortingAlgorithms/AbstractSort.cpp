@@ -86,3 +86,10 @@ int* AbstractSort::generateRandomInput(size_t size, int min /* = 0 */, int max /
 
     return input;
 }
+
+void AbstractSort::swap(int& item1, int& item2)
+{
+    int tmp = item1;
+    item1 = item2;
+    item2 = tmp;
+}
