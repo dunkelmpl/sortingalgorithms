@@ -138,10 +138,12 @@
     <ClCompile Include="BubbleSort.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="AbstractSort.cpp" />
+    <ClCompile Include="SelectionSort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractSort.h" />
     <ClInclude Include="BubbleSort.h" />
+    <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="SortingTester.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
