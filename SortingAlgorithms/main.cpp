@@ -1,3 +1,7 @@
+#define _CRTDBG_MAP_ALLOC  
+#include <stdlib.h>  
+#include <crtdbg.h> 
+
 #include "SortingTester.h"
 #include "BubbleSort.h"
 #include "SelectionSort.h"
@@ -7,17 +11,21 @@ int main()
 {
     int result = 0;
 
-    vector<AbstractSort*> sortTestInstances{
-        new BubbleSort(),
-        new SelectionSort(),
-        new InsertionSort()
-    };
+    {
+        vector<AbstractSort*> sortTestInstances{
+            new BubbleSort(),
+            new SelectionSort(),
+            new InsertionSort()
+        };
 
-    for (auto&& sortTest : sortTestInstances) {
-        result = (0 == result) && SortingTester::run(sortTest);
+        for (auto&& sortTest : sortTestInstances) {
+            result = (0 == result) && SortingTester::run(sortTest);
 
-        delete sortTest;
+            delete sortTest;
+        }
     }
+
+    _CrtDumpMemoryLeaks();
 
     return result;
 }
