@@ -6,7 +6,7 @@ void HeapSort::sort()
 
     int siftSize = storage.size() - 1;
 
-    while (siftSize >= 0) {
+    while (siftSize > 0) {
         swap(storage[0], storage[siftSize]);
 
         siftDown(0, siftSize--);
