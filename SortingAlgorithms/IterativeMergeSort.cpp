@@ -1,5 +1,4 @@
 #include "IterativeMergeSort.h"
-#include <algorithm>
 
 void IterativeMergeSort::sort()
 {
