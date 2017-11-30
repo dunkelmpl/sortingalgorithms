@@ -3,10 +3,10 @@
 
 using namespace std;
 
-class AbstractSort {
+class BaseSort {
 public:
-    AbstractSort() : storage(0) {};
-    AbstractSort(int input[], size_t size) : storage(input, input + size) {};
+    BaseSort() : storage(0) {};
+    BaseSort(int input[], size_t size) : storage(input, input + size) {};
 
 public:
     int runTests(size_t numTests = 10);

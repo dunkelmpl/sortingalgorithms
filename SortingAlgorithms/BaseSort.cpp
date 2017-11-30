@@ -1,4 +1,4 @@
-#include "AbstractSort.h"
+#include "BaseSort.h"
 
 #include <iostream>
 #include <vector>
@@ -8,7 +8,7 @@
 
 using namespace std;
 
-int AbstractSort::runTests(size_t numTests /* = 10 */)
+int BaseSort::runTests(size_t numTests /* = 10 */)
 {
     srand((unsigned)time(nullptr));
 
@@ -37,7 +37,7 @@ int AbstractSort::runTests(size_t numTests /* = 10 */)
     return 0;
 }
 
-void AbstractSort::assertSorted(bool expectAscending /* = true */)
+void BaseSort::assertSorted(bool expectAscending /* = true */)
 {
     assert(
         ([=]() -> bool {
@@ -55,7 +55,7 @@ void AbstractSort::assertSorted(bool expectAscending /* = true */)
     );
 }
 
-void AbstractSort::print(char* title)
+void BaseSort::print(char* title)
 {
     cout << title << ": ";
     for (auto &item : storage) {
@@ -65,18 +65,18 @@ void AbstractSort::print(char* title)
     cout << endl;
 }
 
-void AbstractSort::setStorage(int input[], size_t size)
+void BaseSort::setStorage(int input[], size_t size)
 {
     this->setStorage(vector<int>(input, input + size));
 }
 
-void AbstractSort::setStorage(vector<int> storage)
+void BaseSort::setStorage(vector<int> storage)
 {
     this->storage = storage;
 
 }
 
-int* AbstractSort::generateRandomInput(size_t size, int min /* = 0 */, int max /* = 1000 */)
+int* BaseSort::generateRandomInput(size_t size, int min /* = 0 */, int max /* = 1000 */)
 {
     int* input = new int[size];
 
@@ -87,7 +87,7 @@ int* AbstractSort::generateRandomInput(size_t size, int min /* = 0 */, int max /
     return input;
 }
 
-void AbstractSort::swap(int& item1, int& item2)
+void BaseSort::swap(int& item1, int& item2)
 {
     int tmp = item1;
     item1 = item2;

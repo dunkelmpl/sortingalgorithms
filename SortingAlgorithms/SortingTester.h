@@ -1,7 +1,7 @@
 #pragma once
-#include "AbstractSort.h"
+#include "BaseSort.h"
 
 class SortingTester {
 public:
-    static int run(AbstractSort* sort) { return sort->runTests(); }
+    static int run(BaseSort* sort) { return sort->runTests(); }
 };

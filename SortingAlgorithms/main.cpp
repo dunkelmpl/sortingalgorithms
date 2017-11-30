@@ -12,10 +12,10 @@ int main()
     int result = 0;
 
     {
-        vector<AbstractSort*> sortTestInstances{
-            new BubbleSort(),
-            new SelectionSort(),
-            new InsertionSort()
+        vector<BaseSort*> sortTestInstances{
+            new BubbleSort,
+            new SelectionSort,
+            new InsertionSort
         };
 
         for (auto&& sortTest : sortTestInstances) {

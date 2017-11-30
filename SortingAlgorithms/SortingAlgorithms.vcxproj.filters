@@ -21,13 +21,13 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AbstractSort.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="SelectionSort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="InsertionSort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseSort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,13 +38,13 @@
     <ClInclude Include="SortingTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AbstractSort.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SelectionSort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="InsertionSort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseSort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

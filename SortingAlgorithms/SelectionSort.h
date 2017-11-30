@@ -1,7 +1,7 @@
 #pragma once
-#include "AbstractSort.h"
+#include "BaseSort.h"
 
-class SelectionSort : public AbstractSort
+class SelectionSort : public BaseSort
 {
 public:
     void sort();
