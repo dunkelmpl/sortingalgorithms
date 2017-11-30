@@ -14,7 +14,7 @@ int BaseSort::runTests(size_t numTests /* = 10 */)
 
     for (size_t test = 0; test < numTests; test++) {
 
-        cout << "Test # " << (test + 1) << ":\n";
+        cout << "Test #" << (test + 1) << ":\n";
 
         size_t size = (rand() % 100) + 1;
         int* input = generateRandomInput(size);
