@@ -7,6 +7,7 @@
 #include "SelectionSort.h"
 #include "InsertionSort.h"
 #include "MergeSort.h"
+#include "HeapSort.h"
 
 int main()
 {
@@ -18,6 +19,7 @@ int main()
             new SelectionSort,
             new InsertionSort,
             new MergeSort,
+            new HeapSort,
         };
 
         for (auto&& sortTest : sortTestInstances) {
