@@ -136,6 +136,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BubbleSort.cpp" />
+    <ClCompile Include="HeapSort.cpp" />
     <ClCompile Include="InsertionSort.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="BaseSort.cpp" />
@@ -145,6 +146,7 @@
   <ItemGroup>
     <ClInclude Include="BaseSort.h" />
     <ClInclude Include="BubbleSort.h" />
+    <ClInclude Include="HeapSort.h" />
     <ClInclude Include="InsertionSort.h" />
     <ClInclude Include="MergeSort.h" />
     <ClInclude Include="SelectionSort.h" />
