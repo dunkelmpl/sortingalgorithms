@@ -2,7 +2,7 @@
 
 void IterativeMergeSort::sort()
 {
-    for (size_t size = 1, dblSize = size << 1; ; size = dblSize, dblSize = size << 1) {
+    for (size_t size = 1, dblSize = size << 1; size <= storage.size(); size = dblSize, dblSize = size << 1) {
 
         for (size_t left = 0; left < storage.size(); left += dblSize) {
             size_t middle = left + size - 1;
@@ -15,10 +15,6 @@ void IterativeMergeSort::sort()
             if (middle < right) {
                 this->merge(left, middle, right);
             }
-        }
-
-        if (size >= storage.size()) {
-            break;
         }
     }
 }
