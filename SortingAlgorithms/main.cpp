@@ -21,7 +21,9 @@ int main()
         };
 
         for (auto&& sortTest : sortTestInstances) {
-            result = (0 == result) && SortingTester::run(sortTest);
+            if (0 == result) {
+                result = SortingTester::run(sortTest);
+            }
 
             delete sortTest;
         }
