@@ -7,6 +7,7 @@
 #include "SelectionSort.h"
 #include "InsertionSort.h"
 #include "MergeSort.h"
+#include "IterativeMergeSort.h"
 #include "HeapSort.h"
 
 int main()
@@ -19,6 +20,7 @@ int main()
             new SelectionSort,
             new InsertionSort,
             new MergeSort,
+            new IterativeMergeSort,
             new HeapSort,
         };
 

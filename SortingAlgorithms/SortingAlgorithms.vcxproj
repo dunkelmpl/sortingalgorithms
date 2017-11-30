@@ -138,6 +138,7 @@
     <ClCompile Include="BubbleSort.cpp" />
     <ClCompile Include="HeapSort.cpp" />
     <ClCompile Include="InsertionSort.cpp" />
+    <ClCompile Include="IterativeMergeSort.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="BaseSort.cpp" />
     <ClCompile Include="MergeSort.cpp" />
@@ -148,6 +149,7 @@
     <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="HeapSort.h" />
     <ClInclude Include="InsertionSort.h" />
+    <ClInclude Include="IterativeMergeSort.h" />
     <ClInclude Include="MergeSort.h" />
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="SortingTester.h" />
