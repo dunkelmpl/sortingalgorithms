@@ -6,6 +6,7 @@
 #include "BubbleSort.h"
 #include "SelectionSort.h"
 #include "InsertionSort.h"
+#include "MergeSort.h"
 
 int main()
 {
@@ -15,7 +16,8 @@ int main()
         vector<BaseSort*> sortTestInstances{
             new BubbleSort,
             new SelectionSort,
-            new InsertionSort
+            new InsertionSort,
+            new MergeSort,
         };
 
         for (auto&& sortTest : sortTestInstances) {
