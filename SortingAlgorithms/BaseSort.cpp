@@ -73,7 +73,6 @@ void BaseSort::setStorage(int input[], size_t size)
 void BaseSort::setStorage(vector<int> storage)
 {
     this->storage = storage;
-
 }
 
 int* BaseSort::generateRandomInput(size_t size, int min /* = 0 */, int max /* = 1000 */)

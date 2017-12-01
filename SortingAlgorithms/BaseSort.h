@@ -7,7 +7,7 @@ class BaseSort {
 public:
     BaseSort() : storage(0) {};
     BaseSort(int input[], size_t size) : storage(input, input + size) {};
-
+    virtual ~BaseSort() {};
 public:
     int runTests(size_t numTests = 10);
 

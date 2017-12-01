@@ -4,5 +4,8 @@
 class IterativeMergeSort : public MergeSort
 {
 public:
+    using MergeSort::MergeSort;
+
+public:
     void sort();
 };

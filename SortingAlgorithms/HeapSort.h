@@ -4,6 +4,9 @@ class HeapSort :
     public BaseSort
 {
 public:
+    using BaseSort::BaseSort;
+
+public:
     void sort();
 
 protected:
