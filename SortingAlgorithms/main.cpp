@@ -9,6 +9,7 @@
 #include "MergeSort.h"
 #include "IterativeMergeSort.h"
 #include "HeapSort.h"
+#include "QuickSort.h"
 
 int main()
 {
@@ -22,6 +23,7 @@ int main()
             new MergeSort,
             new IterativeMergeSort,
             new HeapSort,
+            new QuickSort,
         };
 
         for (auto&& sortTest : sortTestInstances) {
