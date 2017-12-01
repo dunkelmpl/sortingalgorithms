@@ -8,5 +8,6 @@ public:
 
 public:
     void sort();
+    void sort(vector<int>& customStorage, int start = 0, int end = -1);
 };
 

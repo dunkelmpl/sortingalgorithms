@@ -2,17 +2,26 @@
 
 void InsertionSort::sort()
 {
-    for (size_t pos = 1; pos < storage.size(); pos++) {
-        int newMin = storage[pos];
-        size_t left = pos;
+    this->sort(storage);
+}
 
-        while ((left > 0) && newMin < storage[left - 1]) {
-            storage[left] = storage[left - 1];
+void InsertionSort::sort(vector<int>& customStorage, int start /* = 0 */, int end /* = -1 */)
+{
+    if (end < 0) {
+        end = customStorage.size();
+    }
+
+    for (int pos = start + 1; pos < end; pos++) {
+        int newMin = customStorage[pos];
+        int left = pos;
+
+        while ((left > 0) && newMin < customStorage[left - 1]) {
+            customStorage[left] = customStorage[left - 1];
             left--;
         }
 
         if (left != pos) {
-            this->storage[left] = newMin;
+            customStorage[left] = newMin;
         }
     }
 }
