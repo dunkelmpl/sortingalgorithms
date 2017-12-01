@@ -8,6 +8,11 @@ void QuickSort::sort()
 void QuickSort::sortChunk(int left, int right)
 {
     while (left < right) {
+        if (shouldUseInsertionSort(left, right)) {
+            this->insertionSort(left, right);
+            break;
+        }
+
         int pivot = this->partition(left, right);
 
         if (pivot - left > right - pivot) { //left side is bigger
@@ -37,4 +42,15 @@ int QuickSort::partition(int left, int right)
     swap(storage[pvtPos], storage[newPvtPos]);
 
     return newPvtPos;
+}
+
+bool QuickSort::shouldUseInsertionSort(int left, int right)
+{
+    return right - left + 1 < insSortUseThreshold;
+}
+
+void QuickSort::insertionSort(int left, int right)
+{
+    InsertionSort ins;
+    ins.sort(this->storage, left, right + 1);
 }
