@@ -7,14 +7,19 @@ void QuickSort::sort()
 
 void QuickSort::sortChunk(int left, int right)
 {
-    if (left >= right) {
-        return;
+    while (left < right) {
+        int pivot = this->partition(left, right);
+
+        if (pivot - left > right - pivot) { //left side is bigger
+            this->sortChunk(left, pivot - 1);
+            left = pivot + 1;
+        }
+        else {
+            this->sortChunk(pivot + 1, right);
+            right = pivot - 1;
+        }
     }
 
-    int pivot = this->partition(left, right);
-
-    this->sortChunk(left, pivot - 1);
-    this->sortChunk(pivot + 1, right);
 }
 
 int QuickSort::partition(int left, int right)
