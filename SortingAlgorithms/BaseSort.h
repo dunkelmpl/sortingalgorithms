@@ -9,7 +9,7 @@ public:
     BaseSort(int input[], size_t size) : storage(input, input + size) {};
     virtual ~BaseSort() {};
 public:
-    int runTests(size_t numTests = 10);
+    int runTests(const string& testName, bool verbose = false, size_t numTests = 100, size_t arrSize = 100);
 
 public:
     virtual void sort() = 0;

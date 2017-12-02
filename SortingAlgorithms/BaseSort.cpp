@@ -1,38 +1,69 @@
 #include "BaseSort.h"
 
 #include <iostream>
+#include <string>
 #include <vector>
 #include <stdlib.h>
 #include <time.h>
 #include <cassert>
+#include <chrono>
+
 
 using namespace std;
 
-int BaseSort::runTests(size_t numTests /* = 10 */)
-{
+int BaseSort::runTests(
+    const string& testName,
+    bool verbose /* = false */,
+    size_t numTests /* = 100 */,
+    size_t arrSize /* = 100 */
+) {
+    auto getMilliseconds = []() {
+        using namespace std::chrono;
+        return duration_cast<milliseconds>(
+            system_clock::now().time_since_epoch()
+        );
+    };
+
     srand((unsigned)time(nullptr));
 
+    int** inputs = new int*[numTests];
+    for (size_t test = 0; test < numTests; test++) {
+        inputs[test] = generateRandomInput(arrSize);
+    }
+
+    cout.width(50);
+    cout << left << testName << " : ";
+
+    chrono::milliseconds startTime = getMilliseconds();
     for (size_t test = 0; test < numTests; test++) {
 
-        cout << "Test #" << (test + 1) << ":\n";
+        if (verbose) {
+            cout << "\nTest #" << (test + 1) << ":\n";
+        }
 
-        size_t size = (rand() % 100) + 1;
-        int* input = generateRandomInput(size);
+        this->setStorage(inputs[test], arrSize);
 
-        this->setStorage(input, size);
+        delete[] inputs[test];
 
-        delete[] input;
-
-        this->print("Original");
+        if (verbose) {
+            this->print("Original");
+        }
 
         this->sort();
 
-        this->print("Sorted");
+        if (verbose) {
+            this->print("Sorted");
+        }
 
         this->assertSorted();
-
-        cout << '\n';
     }
+
+    chrono::milliseconds endTime = getMilliseconds();
+
+    delete[] inputs;
+
+    cout.width(5);
+    cout << right << (endTime.count() - startTime.count()) << "(ms)" << endl;
 
     return 0;
 }
