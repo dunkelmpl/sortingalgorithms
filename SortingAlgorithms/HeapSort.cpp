@@ -4,7 +4,7 @@ void HeapSort::sort()
 {
     heapify();
 
-    int siftSize = storage.size() - 1;
+    int siftSize = (int)storage.size() - 1;
 
     while (siftSize > 0) {
         swap(storage[0], storage[siftSize]);
@@ -15,7 +15,7 @@ void HeapSort::sort()
 
 void HeapSort::heapify()
 {
-    int storageSize = storage.size();
+    int storageSize = (int)storage.size();
 
     for (int top = (storageSize >> 1) - 1; top >= 0; top--) {
         siftDown(top, storageSize);
