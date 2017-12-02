@@ -56,7 +56,7 @@ int main()
         cout <<
             "\n-----------------------------------------------------------------------------------\n" <<
             "Running " << numTests <<
-            " tests for every sorting algorithm with random arrays of len = " << arrSize <<
+            " tests for each sorting algorithm with random arrays of len = " << arrSize <<
             "\n-----------------------------------------------------------------------------------\n\n";
 
         for (auto& sortTest : sortTestInstances) {
