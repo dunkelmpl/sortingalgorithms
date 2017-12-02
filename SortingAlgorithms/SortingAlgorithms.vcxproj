@@ -150,6 +150,7 @@
     <ClCompile Include="QuickSortPartitionStrategies\HoareMiddleIndexStrategy.cpp" />
     <ClCompile Include="QuickSortPartitionStrategies\HoareRandomIndexStrategy.cpp" />
     <ClCompile Include="SelectionSort.cpp" />
+    <ClCompile Include="STLSort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseSort.h" />
@@ -167,6 +168,7 @@
     <ClInclude Include="QuickSortPartitionStrategies\HoareRandomIndexStrategy.h" />
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="SortingTester.h" />
+    <ClInclude Include="STLSort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
