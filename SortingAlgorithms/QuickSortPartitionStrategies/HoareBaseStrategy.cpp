@@ -32,6 +32,5 @@ int HoareBaseStrategy::partition(int left, int right)
         swap(storage[leftPos++], storage[rightPos--]);
     }
 
-    //rightPos supposed to be the same here
     return rightPos;
 }
