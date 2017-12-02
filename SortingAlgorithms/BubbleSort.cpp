@@ -20,4 +20,3 @@ void BubbleSort::sort()
         numUnsorted--;
     } while (swapped && (numUnsorted > 0));
 }
-
