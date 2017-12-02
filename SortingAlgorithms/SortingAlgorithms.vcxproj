@@ -143,6 +143,12 @@
     <ClCompile Include="BaseSort.cpp" />
     <ClCompile Include="MergeSort.cpp" />
     <ClCompile Include="QuickSort.cpp" />
+    <ClCompile Include="QuickSortPartitionStrategies\BaseStrategy.cpp" />
+    <ClCompile Include="QuickSortPartitionStrategies\HoareBaseStrategy.cpp" />
+    <ClCompile Include="QuickSortPartitionStrategies\HoareMedianOf3IndexStrategy.cpp" />
+    <ClCompile Include="QuickSortPartitionStrategies\LomutoStrategy.cpp" />
+    <ClCompile Include="QuickSortPartitionStrategies\HoareMiddleIndexStrategy.cpp" />
+    <ClCompile Include="QuickSortPartitionStrategies\HoareRandomIndexStrategy.cpp" />
     <ClCompile Include="SelectionSort.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +159,12 @@
     <ClInclude Include="IterativeMergeSort.h" />
     <ClInclude Include="MergeSort.h" />
     <ClInclude Include="QuickSort.h" />
+    <ClInclude Include="QuickSortPartitionStrategies\BaseStrategy.h" />
+    <ClInclude Include="QuickSortPartitionStrategies\HoareBaseStrategy.h" />
+    <ClInclude Include="QuickSortPartitionStrategies\HoareMedianOf3IndexStrategy.h" />
+    <ClInclude Include="QuickSortPartitionStrategies\LomutoStrategy.h" />
+    <ClInclude Include="QuickSortPartitionStrategies\HoareMiddleIndexStrategy.h" />
+    <ClInclude Include="QuickSortPartitionStrategies\HoareRandomIndexStrategy.h" />
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="SortingTester.h" />
   </ItemGroup>

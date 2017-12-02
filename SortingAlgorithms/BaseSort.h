@@ -18,7 +18,7 @@ public:
 public:
     void setStorage(int input[], size_t size);
     void setStorage(vector<int> storage);
-    inline vector<int> getStorage() const { return storage; };
+    vector<int>& getStorage() { return storage; }
 
 protected:
     void swap(int& item1, int& item2);

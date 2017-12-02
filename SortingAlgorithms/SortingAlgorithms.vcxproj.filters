@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\QuickSortPartitionStrategies">
+      <UniqueIdentifier>{3332ba29-4720-44b5-a01d-f77ff2773a7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\QuickSortPartitionStrategies">
+      <UniqueIdentifier>{70101e74-37a0-4273-9d40-f3c666b25a05}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BubbleSort.cpp">
@@ -42,6 +48,27 @@
     <ClCompile Include="QuickSort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="QuickSortPartitionStrategies\BaseStrategy.cpp">
+      <Filter>Source Files\QuickSortPartitionStrategies</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickSortPartitionStrategies\LomutoStrategy.cpp">
+      <Filter>Source Files\QuickSortPartitionStrategies</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickSortPartitionStrategies\HoareBaseStrategy.cpp">
+      <Filter>Source Files\QuickSortPartitionStrategies</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickSortPartitionStrategies\HoareMiddleIndexStrategy.cpp">
+      <Filter>Source Files\QuickSortPartitionStrategies</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickSortPartitionStrategies\HoareRandomIndexStrategy.cpp">
+      <Filter>Source Files\QuickSortPartitionStrategies</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickSortPartitionStrategies\HoareMedianOf3IndexStrategy.cpp">
+      <Filter>Source Files\QuickSortPartitionStrategies</Filter>
+    </ClCompile>
+    <ClCompile Include="STLSort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BubbleSort.h">
@@ -69,6 +96,27 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="QuickSort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSortPartitionStrategies\BaseStrategy.h">
+      <Filter>Header Files\QuickSortPartitionStrategies</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSortPartitionStrategies\LomutoStrategy.h">
+      <Filter>Header Files\QuickSortPartitionStrategies</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSortPartitionStrategies\HoareBaseStrategy.h">
+      <Filter>Header Files\QuickSortPartitionStrategies</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSortPartitionStrategies\HoareMiddleIndexStrategy.h">
+      <Filter>Header Files\QuickSortPartitionStrategies</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSortPartitionStrategies\HoareRandomIndexStrategy.h">
+      <Filter>Header Files\QuickSortPartitionStrategies</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSortPartitionStrategies\HoareMedianOf3IndexStrategy.h">
+      <Filter>Header Files\QuickSortPartitionStrategies</Filter>
+    </ClInclude>
+    <ClInclude Include="STLSort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
