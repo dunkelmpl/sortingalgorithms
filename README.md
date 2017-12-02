@@ -4,7 +4,7 @@ Development environment: Microsoft Visual Studio Community 2017.
 
 Program output:
 
-
+```
 -----------------------------------------------------------------------------------
 Running 100 tests for each sorting algorithm with random arrays of len = 10000
 -----------------------------------------------------------------------------------
@@ -23,3 +23,4 @@ Built-in sort (std::sort())                        :    55(ms)
 
 -----------------------------------------------------------------------------------
 Done
+```
